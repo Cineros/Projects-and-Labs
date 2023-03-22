@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class temp {
+public class tictactoe {
 
     enum POB{X,O,N;};
 
@@ -129,51 +129,53 @@ public class temp {
         for(int n = 0; n < 8; n++){
             switch(n){
                 case 1:
-                    if(board[0][0] == board[0][1] && board[0][0] == board[0][2]){
+                    if(board[0][0] == board[0][1] && board[0][1] == board[0][2]){
                         switchTurn();
-                        System.out.printf(turn + " Has won!%n");
+                        System.out.printf(turn + " Has won!%n" + "%n1%n");
                         return(true);
                     }
                 case 2:
-                    if(board[1][0] == board[1][1] && board[1][0] == board[1][2]){
+                    if(board[1][0] == board[1][1] && board[1][1] == board[1][2]){
                         switchTurn();
-                        System.out.printf(turn + " Has won!%n");
+                        System.out.printf(turn + " Has won!%n" + "%n2%n");
                         return(true);
                     }
                 case 3:
-                    if(board[2][0] == board[2][1] && board[2][0] == board[2][2]){
-                        switchTurn();
-                        System.out.printf(turn + " Has won!%n");
-                        return(true);
+                    if(board[2][0] != POB.N){
+                        if(board[2][0] == board[2][1] && board[2][1] == board[2][2]){
+                            switchTurn();
+                            System.out.printf(turn + " Has won!%n" + "%n3%n");
+                            return(true);
+                        }
                     }
                 case 4:
-                    if(board[0][0] == board[1][1] && board[0][0] == board[2][2]){
+                    if(board[0][0] == board[1][1] && board[1][1] == board[2][2]){
                         switchTurn();
-                        System.out.printf(turn + " Has won!%n");
+                        System.out.printf(turn + " Has won!%n" + "%n4%n");
                         return(true);
                     }
                 case 5:
-                    if(board[2][2] == board[1][1] && board[2][2] == board[0][2]){
+                    if(board[2][2] == board[1][1] && board[1][1] == board[0][0]){
                         switchTurn();
-                        System.out.printf(turn + " Has won!%n");
+                        System.out.printf(turn + " Has won!%n" + "%n5%n");
                         return(true);
                     }
                 case 6:
-                    if(board[0][0] == board[1][0] && board[0][0] == board[2][0]){
+                    if(board[0][0] == board[1][0] && board[1][0] == board[2][0]){
                         switchTurn();
-                        System.out.printf(turn + " Has won!%n");
+                        System.out.printf(turn + " Has won!%n" + "%n6%n");
                         return(true);
                     }
                 case 7:
-                    if(board[0][1] == board[1][1] && board[0][1] == board[2][1]){
+                    if(board[0][1] == board[1][1] && board[1][1] == board[2][1]){
                         switchTurn();
-                        System.out.printf(turn + " Has won!%n");
+                        System.out.printf(turn + " Has won!%n" + "%n7%n");
                         return(true);
                     }
                 case 8:
-                    if(board[0][2] == board[1][2] && board[0][2] == board[2][2]){
+                    if(board[0][2] == board[1][2] && board[1][2] == board[2][2]){
                         switchTurn();
-                        System.out.printf(turn + " Has won!%n");
+                        System.out.printf(turn + " Has won!%n" + "%n8%n");
                         return(true);
                     }
             }
