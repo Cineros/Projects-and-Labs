@@ -1,3 +1,4 @@
+//I Dont know why this file is angry with me. It requires the other file Car.java.
 public class CarApplication {
     public static void main(String[] args) {
         Car A = new Car("Honda Civic", "2020", 24000.00, .02);
