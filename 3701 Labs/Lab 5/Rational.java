@@ -143,9 +143,12 @@ public class Rational{
         return(temp);
     }
     public static void printFloat(Fraction a){
+        float tempNum = a.num;
+        float tempDen = a.den;
 
-        //Disfunctional at the moment.
-        float temp = a.num / a.den;
+        //Prints Float values.
+        float temp = tempNum / tempDen;
+     
         System.out.println("Here is your fraction in floating point: " + temp);
     }
 
