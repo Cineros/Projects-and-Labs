@@ -115,7 +115,7 @@ int main(){
     std::cin >> dartNum;
 
     for(int i = 0; i<dartNum; i++){
-35857548        std::cin >> dart;
+        std::cin >> dart;
         for (int j=0; j<polyNum; j++) {
             if(hit(dart, boardEdge, polys, vertNum[j])){
                 std::cout << polyNum << std::endl;
