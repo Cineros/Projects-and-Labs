@@ -1,8 +1,0 @@
-{
-    "java.debug.settings.onBuildFailureProceed": true,
-    "files.associations": {
-        "iostream": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "disabled",
-    "cmake.configureOnOpen": false
-}
